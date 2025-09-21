@@ -18,8 +18,14 @@ class DatabaseSeeder extends Seeder
         $this->call([
             UsersTableSeeder::class,
         ]);
-        // $this->call([
-        //     WeekSeeder::class,
-        // ]);
+        $this->call([
+            WeekSeeder::class,
+        ]);
+        $this->call([
+            SchoolBackfillSeeder::class,
+        ]);
+        $this->call([
+            SuperAdminSeeder::class,
+        ]);
     }
 }
