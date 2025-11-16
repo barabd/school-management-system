@@ -123,7 +123,7 @@
     <a href="{{ route('landing') }}" class="btn-home" aria-label="Go to homepage">Home</a>
   </main>
 
-  <!-- Demo Video Modal -->
+  {{-- <!-- Demo Video Modal -->
   <div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-xl">
       <div class="modal-content border-0">
@@ -147,7 +147,35 @@
         </div>
       </div>
     </div>
+  </div> --}}
+
+<!-- Demo Video Modal -->
+<div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content border-0">
+      <div class="modal-header">
+        <h5 class="modal-title" id="demoModalLabel">Quick Product Demo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body p-0">
+        <!-- Responsive 16:9 player -->
+        <div class="ratio ratio-16x9 position-relative">
+          <iframe
+            src="https://player.vimeo.com/video/1137393090?badge=0&autopause=0&player_id=demoVimeo&app_id=58479"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            style="position:absolute; top:0; left:0; width:100%; height:100%;"
+            title="Demo"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+    </div>
   </div>
+</div>
 
   <!-- Lottie player -->
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
